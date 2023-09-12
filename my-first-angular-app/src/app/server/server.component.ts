@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
     templateUrl: './server.component.html',
 })
 
-class ServerComponent {
+export class ServerComponent {
 
 }
