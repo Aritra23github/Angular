@@ -1,6 +1,21 @@
 
-<!--Poperty Binding-->
-<button class="btn btn-primary" [disabled]="isButtonDisabled">Add Server</button>
+<!--Poperty Binding Event Binding-->
+<button 
+    class="btn btn-primary" 
+    [disabled]="isButtonDisabled"
+    (click)="onServerCreated()"
+    >
+    Add Server
+</button>
+
+<p>{{serverCreationStatus}}</p>
+
+<input 
+    type="text"
+    (input)="generateServerName($event)"
+>
+
+<p>{{serverName}}</p>
 
 <app-server></app-server>
 <app-server></app-server>
